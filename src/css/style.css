@@ -1,0 +1,68 @@
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo .logo {
+    width: 400px;
+    margin: 20px;
+}
+
+.gundam-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 160px 0;
+    gap: 180px;
+}
+
+.gundam-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gundam-slider .card{
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    position: absolute; /*dar position absolute para ir no meio*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.card.selected {
+    opacity: 1;
+    z-index: 1;
+}
+
+.gundam-slider .card .gundam {
+    width: 250px;
+    height: 300px;
+}
+
+.btn-set {
+    border-radius: 50%;
+    background: none;
+    border: none;
+}
+
+.btn-set:hover {
+    background-color: rgb(115, 218, 236);
+}
+
+.btn-set .btn {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.btn-set.btn-prev {
+    transform: rotateY(180deg);
+}
